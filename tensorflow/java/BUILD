@@ -446,7 +446,7 @@ tf_cc_binary(
         "//tensorflow:windows": [],
         "//conditions:default": [
             "-z defs",
-            "-s",
+            # "-s",
             "-Wl,--version-script,$(location {})".format(LINKER_VERSION_SCRIPT),
         ],
     }),
